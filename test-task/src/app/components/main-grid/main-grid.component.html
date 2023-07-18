@@ -1,0 +1,17 @@
+<div class="game-wrapper">
+    <div class="buttons">
+        <button mat-raised-button color="primary" (click)="initGame()">Почати</button>
+        <mat-form-field class="mat-field" appearance="outline">
+            <mat-label>Введіть час (у мілісекундах)</mat-label>
+            <input matInput type="number" [(ngModel)]="timeLimit">
+        </mat-form-field>
+    </div>
+    <div>
+        <p>Ваші бали: {{ playerScore }}</p>
+        <p>Бали комп'ютера: {{ computerScore }}</p>
+    </div>
+    <div>
+        <div class="row" *ngFor="let row of grid">
+            <div class="cell" *ngFor="let cell of row" [ngClass]="cell.color" (click)="cellClicked(cell)"></div>
+        </div>
+    </div>

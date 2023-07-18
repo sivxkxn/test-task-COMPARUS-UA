@@ -1,0 +1,49 @@
+.game-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem auto;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.mat-field {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(75, 75, 243);
+    margin: 0.5px;
+}
+
+.yellow {
+    background-color: rgb(227, 227, 17);
+}
+
+.green {
+    background-color: rgb(49, 209, 49);
+}
+
+.red {
+    background-color: rgb(224, 51, 51);
+}
+
+.scores {
+    margin-top: 20px;
+}

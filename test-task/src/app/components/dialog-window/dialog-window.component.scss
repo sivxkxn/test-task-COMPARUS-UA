@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.dialog-content {
+    text-align: center;
+}
+
+.dialog-actions {
+    justify-content: flex-end;
+}
+
+::ng-deep .cdk-overlay-pane,
+.game-dialog-container {
+    max-width: 80vw;
+    position: relative !important;
+    bottom: 60vh;
+    left: 10vw;
+}
+
+.dialog-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}

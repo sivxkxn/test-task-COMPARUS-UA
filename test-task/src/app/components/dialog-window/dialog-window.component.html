@@ -1,0 +1,13 @@
+<div>
+    <h3 mat-dialog-title class="dialog-title">Гра закінчена</h3>
+    <div mat-dialog-content>
+        <p *ngIf="data.playerScore === 10">Вітаю! Ви преремогли!!!</p>
+        <p *ngIf="data.computerScore === 10">На жаль, ви програли.</p>
+        <p>Ваші бали: {{ data.playerScore }}</p>
+        <p>Бали комп'ютера: {{ data.computerScore }}</p>
+    </div>
+    <div mat-dialog-actions align="center">
+        <button mat-raised-button [mat-dialog-close]="'close'">Закінчити</button>
+        <button mat-raised-button [mat-dialog-close]="'restart'">Перезапустити</button>
+    </div>
+</div>
